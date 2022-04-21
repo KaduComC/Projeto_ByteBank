@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../database/DAO/contact_DAO.dart';
+import '../database/dao/contact_DAO.dart';
 import '../models/contact.dart';
 
 class ContactForm extends StatefulWidget {

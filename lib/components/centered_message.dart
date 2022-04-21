@@ -6,12 +6,12 @@ class CenteredMessage extends StatelessWidget {
   final double iconSize;
   final double fontSize;
 
-  CenteredMessage(
-    this.message, {
-    this.icon,
+  const CenteredMessage(
+    this.message, {Key? key,
+    required this.icon,
     this.iconSize = 64,
     this.fontSize = 24,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,6 @@ class CenteredMessage extends StatelessWidget {
               icon,
               size: iconSize,
             ),
-            visible: icon != null,
           ),
           Padding(
             padding: const EdgeInsets.only(top: 24.0),
