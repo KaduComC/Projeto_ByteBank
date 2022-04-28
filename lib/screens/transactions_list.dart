@@ -13,6 +13,7 @@ class TransactionsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          centerTitle: true,
           title: const Text('Transactions'),
         ),
         body: FutureBuilder<List<Transaction>>(
@@ -59,7 +60,7 @@ class TransactionsList extends StatelessWidget {
                 }
                 return const CenteredMessage(
                   'No transactions found',
-                  icon: Icons.warning,
+                  icon: Icons.warning_amber_outlined,
                 );
             }
             return const Text('Unknown error');

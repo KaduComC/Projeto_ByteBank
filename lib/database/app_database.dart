@@ -10,6 +10,6 @@ Future<Database> getDatabase() async {
       db.execute(ContactDAO.tableSQL);
     },
     version: 1,
-    //onDowngrade: onDatabaseDowngradeDelete,
+    // onDowngrade: onDatabaseDowngradeDelete,
   );
 }
