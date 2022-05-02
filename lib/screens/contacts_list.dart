@@ -31,7 +31,7 @@ class _ContactsListsState extends State<ContactsLists> {
               // TODO: Handle this case.
               break;
             case ConnectionState.waiting:
-              return const Progress();
+              return const Progress('Loading');
             case ConnectionState.active:
               // TODO: Handle this case.
               break;
@@ -93,8 +93,10 @@ class _ContactItem extends StatelessWidget {
         contact.name,
         style: const TextStyle(fontSize: 24.0),
       ),
-      subtitle: Text(contact.accountNumber.toString(),
-          style: const TextStyle(fontSize: 16.0)),
+      subtitle: Text(
+        contact.accountNumber.toString(),
+        style: const TextStyle(fontSize: 16.0),
+      ),
     ));
   }
 }

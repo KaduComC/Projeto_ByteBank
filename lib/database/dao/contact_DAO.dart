@@ -6,7 +6,7 @@ import '../app_database.dart';
 
 class ContactDAO {
   static const String tableSQL = 'CREATE TABLE $_tableName ('
-      '$_id SERIAL PRIMARY KEY, '
+      '$_id INT PRIMARY KEY, '
       '$_name TEXT, '
       '$_accountNumber INTEGER)';
 

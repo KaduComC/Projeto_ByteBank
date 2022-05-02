@@ -8,7 +8,7 @@ class Contact {
       this.name,
       this.accountNumber,);
 
-  String grupData() => 'Name: $name\nAccount: $accountNumber';
+  String groupData() => 'Name: $name\nAccount: $accountNumber';
 
   Contact.fromJson(Map<String, dynamic> json)
       : id = json['id'],

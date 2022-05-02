@@ -24,7 +24,7 @@ class TransactionsList extends StatelessWidget {
                 // TODO: Handle this case.
                 break;
               case ConnectionState.waiting:
-                return const Progress();
+                return const Progress('Loading');
               case ConnectionState.active:
                 // TODO: Handle this case.
                 break;
@@ -46,7 +46,7 @@ class TransactionsList extends StatelessWidget {
                               ),
                             ),
                             subtitle: Text(
-                              transaction.contact.grupData(),
+                              transaction.contact.groupData(),
                               style: const TextStyle(
                                 fontSize: 16.0,
                               ),
